@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="movie.css">
+    <title>Document</title>
+</head>
+<body> 
+    <header>
+        <nav>
+            <div class="topnav">
+                <a href="#"> Amazon </a>
+                
+                 <input type="text" placeholder="Search for anything">
+               
+                <a href="#"> Login </a>
+                <a href="#"> Sign in </a>
+        
+            </div>
+            <br>
+            <section class="nav-container">
+                <div class="nav-bar">
+                     <a href="#"> Home </a>
+                     <a href="#"> About </a>
+                     <a href="#"> Contact </a>
+                     <a href="#">Socials </a>
+              </div>
+            </section>
+      </nav>
+    </header>
+<div class="welcome">
+  <h2>
+        You are a New Member?
+  </h2>
+  <p> We want to get to know you better!!</p>
+</div>
+    <section class= "form.container">
+    <form class="form-box" id = "FormElem">
+        <label for = 'fname'> First Name : </label> <br>
+        <input type= "text" id = 'fName' name = 'fname'><br>
+        <label for='sName'> Last Name : </label> <br>
+        <input type="text" id = "sName" name='sname'><br>
+        <label for ='fClub'> Favourite Club:</label><br>
+        <input type= "text" id='fClub' name= "fClub"><br>
+        <label for ="age"> Age: </label><br>
+        <input type = "number" id= 'age' name = 'age'> <br>
+        <label for ="cl"> Current level: </label><br>
+        <input type = "number" id= 'cLevel' name = 'cl'> <br>
+        <!-- <h4>Gender</h4> -->
+        <!-- <label for ='Gender'> Gender </label><br>
+        <input type = 'radio' id= 'male' name = 'gender' value = 'Male'>
+        <label for ='male'> Male </label><br>
+        <input type = 'radio' value= 'female' name= "female" id='female'>
+        <label for = 'female'> Female </label><br>
+        <input type = 'radio' value = 'other' name = 'other' id = 'other'>
+        <label for = 'other'> Other </label> <br> -->
+        <button type='button' class="submit-btn" id='save' > Save Profile</button>
+        
+    </form>
+    </section>
+
+    <table >
+       <th>FirstName</th>
+       <th>Last Name</th>
+       <th>Favourite Club</th>
+       <th>Age </th>
+       <th>Current Level</th>
+
+        <tbody id= table>
+
+        </tbody>
+
+    </table>
+    
+    <footer> enriching live's through fellowship</footer> 
+   <script src="movie.js"></script>
+</body>
+</html>
