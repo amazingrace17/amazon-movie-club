@@ -44,7 +44,7 @@ body {
     
 }
 
-}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -85,7 +85,7 @@ nav {
     margin: 0 auto;
     font-size: 14px;
 }
-nav .nav- .topnav {
+nav  .topnav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -134,7 +134,7 @@ nav .nav- .topnav {
    background-color: transparent;
    color:whitesmoke
 }
-p{
+p {
     color: whitesmoke;
     align-self: stretch;
 }

@@ -23,12 +23,9 @@
 
 
    let UserInfo= []
- save.addEventListener('click', function (event) {
+   save.addEventListener('click', (event)=> {
      event.preventDefault()
-      
-    
-  
-const UserData = { firstname: firstname.value,
+      const UserData = { firstname: firstname.value,
     lastname : lastname.value,
     age : age.value,
     favouriteClub : favouriteClub.value,
@@ -41,19 +38,19 @@ const UserData = { firstname: firstname.value,
    document.querySelector("#age").value= ""
   document.querySelector("#fClub").value= "" 
   document.querySelector("#cLevel").value= ""
-  
-  
-  
-      document.getElementById("table").innerHTML= UserInfo.map((UserData)=>{
 
-  return `<tr>
-         <td>${UserData.firstname}</td>
-         <td>${UserData.lastname}</td>
-         <td>${UserData.age} </td>
-         <td>${UserData.favouriteClub}</td>
-        <td>${UserData.CurrentLevel}</td>
-        <button> Delete </button>
-  `
+  document.getElementById("table").innerHTML= UserInfo.map((UserData)=>{
+ return(
+  `<tr>
+  <td>${UserData.firstname}</td>
+  <td>${UserData.lastname}</td>
+  <td>${UserData.age} </td>
+  <td>${UserData.favouriteClub}</td>
+ <td>${UserData.CurrentLevel}</td>
+ <button onClick="remove(${UserData.id})">delete</button>
+ </tr>`
+ )
+   
       })
 })
  
